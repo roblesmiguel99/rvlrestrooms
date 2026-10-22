@@ -1,0 +1,7 @@
+assets/src/
+.impeccable/
+.claude/
+PRODUCT.md
+DESIGN.md
+.gitignore
+.env*
