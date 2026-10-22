@@ -600,7 +600,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <div class="field"><label for="last">Last name</label><input id="last" name="last" autocomplete="family-name"></div>
         <div class="field"><label for="phone">Phone <i>*</i></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="[\d\s\(\)\+\.\-]{7,}"><span class="err">Please add a phone number we can call back.</span></div>
         <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="err">That email looks incomplete.</span></div>
-        <div class="field full"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
+        <div class="field full"><label for="date">Event date <i>*</i></label><input id="date" name="date" type="date" required><span class="err">Please choose your event date. It can’t be in the past.</span></div>
         <div class="field full"><label for="msg">About your event</label><textarea id="msg" name="msg" placeholder="Venue, guest count, hours, anything we should know"></textarea></div>
       </div>
       <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
@@ -676,6 +676,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   const form = document.getElementById('bookForm'), status = form.querySelector('.status');
   const submitBtn = form.querySelector('button[type=submit]'), received = form.querySelector('.received');
   const formId = (form.dataset.formspree || '').trim();
+  const dateEl = form.querySelector('#date');
+  const today = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  dateEl.min = today;
   if (!formId) form.querySelector('.reg-note').textContent = 'Opens your email app with the details filled in.';
   const check = el => {
     const ok = el.checkValidity() && (!el.required || el.value.trim() !== '');
@@ -685,6 +688,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   };
   form.querySelectorAll('.fields input').forEach(el => {
     el.addEventListener('blur', () => el.value && check(el));
+    el.addEventListener('change', () => el.type === 'date' && el.value && check(el));
     el.addEventListener('input', () => { if (el.closest('.field').classList.contains('invalid') && check(el) && !form.querySelector('.field.invalid')) status.textContent = ''; });
   });
   const setBusy = on => {
@@ -716,7 +720,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     body.append('Name', name);
     body.append('Phone', d.phone);
     if (d.email) body.append('email', d.email);
-    body.append('Event date', d.date || 'Not given');
+    body.append('Event date', d.date);
     body.append('About the event', d.msg || '');
     body.append('_subject', `Booking request from ${name}${d.date ? ' for ' + d.date : ''}`);
     setBusy(true); status.textContent = '';
