@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Valley Luxury Restrooms · Walla Walla, WA</title>
+<meta name="description" content="A climate-controlled, three-station luxury restroom trailer for weddings, corporate events, and festivals in Walla Walla and nearby. Call (509) 212-6575.">
+<meta name="theme-color" content="#2a1420">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%232a1420'/%3E%3Cpath d='M10 44 22 28l5 6 7-12 9 13 4-4 7 13z' fill='%23c9a15a'/%3E%3Cpath d='M23 20l2-8 4 5 3-7 3 7 4-5 2 8z' fill='%23c9a15a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cab:#2a1420;
+  --cab-deep:#1c0c15;
+  --oxblood:#4a1b2c;
+  --oxblood-2:#5d2236;
+  --ivory:#efe6d6;
+  --ivory-dim:#cdbca9;
+  --foil:#c9a15a;
+  --foil-hi:#ecd393;
+  --foil-lo:#8a6630;
+  --champ:#c79f5e;
+  --champ-ink:#2a1420;
+  --champ-dim:#4b2a2c;
+  --rule:rgba(201,161,90,.42);
+  --display:"Bodoni Moda", "Didot", "Bodoni 72", serif;
+  --body:"Jost", "Futura", "Avenir Next", sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gutter:clamp(16px,4vw,56px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cab);color:var(--ivory);font:400 1.0625rem/1.65 var(--body);font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-color:var(--foil);text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{text-decoration-color:var(--foil-hi)}
+::selection{background:var(--foil);color:var(--cab-deep)}
+:focus-visible{outline:2px solid var(--foil-hi);outline-offset:3px;border-radius:2px}
+html{scrollbar-color:var(--oxblood-2) var(--cab-deep)}
+::-webkit-scrollbar{width:12px}
+::-webkit-scrollbar-track{background:var(--cab-deep)}
+::-webkit-scrollbar-thumb{background:var(--oxblood-2);border:3px solid var(--cab-deep);border-radius:8px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--foil);color:var(--cab-deep);padding:.6em 1em;z-index:99}
+.skip:focus{left:8px}
+.wrap{width:min(1240px,100%);margin-inline:auto;padding-inline:var(--gutter)}
+.sc{font-family:var(--body);font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.04;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h2{font-size:clamp(2.3rem,5.2vw,4.4rem);font-variation-settings:"opsz" 96}
+h2 em,h1 em{font-style:italic;font-weight:400}
+p{margin:0 0 1em;max-width:62ch;text-wrap:pretty}
+
+/* Foil: the label's stamped gold. Sheen follows the pointer (--fx). */
+.foil{
+  --fx:30%;
+  background:linear-gradient(105deg,var(--foil-lo) 0%,var(--foil) calc(var(--fx) - 22%),var(--foil-hi) var(--fx),var(--foil) calc(var(--fx) + 18%),var(--foil-lo) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+svg.foil-svg{color:var(--foil)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:.85em 1.6em;font:600 .78rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--foil);border-radius:2px;cursor:pointer;transition:background-color .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease)}
+.btn-foil{background:var(--foil);color:var(--cab-deep);box-shadow:0 6px 18px -8px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,240,200,.55)}
+.btn-foil:hover{background:var(--foil-hi);border-color:var(--foil-hi)}
+.btn-line{background:transparent;color:var(--ivory)}
+.btn-line:hover{background:rgba(201,161,90,.14)}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(28,12,21,.86);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(201,161,90,.22)}
+.hdr .wrap{display:flex;align-items:center;gap:24px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.brand svg{width:42px;height:42px}
+.brand span{font-family:var(--display);font-size:1.12rem;line-height:1.05;font-weight:500}
+.brand small{display:block;font:500 .6rem/1.4 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--ivory-dim)}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font:500 .74rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--ivory-dim);padding:10px 0;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.nav a:hover{color:var(--ivory);border-color:var(--foil)}
+.hdr .btn{min-height:42px;padding:.7em 1.2em}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--rule);color:var(--ivory);min-height:44px;padding:0 14px;font:500 .72rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;border-radius:2px;cursor:pointer}
+@media (max-width:980px){
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--cab-deep);border-bottom:1px solid var(--rule);padding:8px var(--gutter) 20px}
+  .nav.open{display:flex}
+  .nav a{padding:16px 0;border-bottom:1px solid rgba(201,161,90,.16);font-size:.8rem}
+  .menu-btn{display:inline-flex;align-items:center}
+  .hdr .btn{display:none}
+}
+
+/* Hero: the estate label beside the bottle shot */
+.hero{position:relative;padding-block:clamp(24px,3vw,44px) clamp(56px,8vw,110px);background:
+  radial-gradient(120% 70% at 18% 0%,rgba(93,34,54,.55),transparent 60%),
+  radial-gradient(90% 60% at 100% 100%,rgba(0,0,0,.35),transparent 70%),var(--cab)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:stretch}
+.label{position:relative;background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 1px,transparent 1px 4px),
+  linear-gradient(180deg,var(--oxblood-2),var(--oxblood) 55%,#3f1625);
+  padding:clamp(30px,3.4vw,44px) clamp(22px,4vw,56px);text-align:center;
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.75),0 2px 0 rgba(255,230,180,.06) inset;
+  display:flex;flex-direction:column;align-items:center;justify-content:center}
+.label::before,.label::after{content:"";position:absolute;pointer-events:none}
+.label::before{inset:12px;border:1px solid var(--foil)}
+.label::after{inset:17px;border:1px solid rgba(201,161,90,.45)}
+.label .crest{width:clamp(68px,6.5vw,92px);height:clamp(68px,6.5vw,92px);margin-bottom:clamp(10px,1.4vw,16px)}
+.label .appellation{color:var(--ivory-dim);margin-bottom:.9em}
+.label h1{font-size:clamp(2.9rem,5.4vw,4.8rem);font-weight:600;line-height:.92;letter-spacing:-.02em;font-variation-settings:"opsz" 96}
+.label h1 .l2{display:block;font-style:italic;font-weight:400;font-size:.5em;letter-spacing:0;margin-top:.18em}
+.label .vint{display:flex;align-items:center;gap:14px;width:min(360px,100%);margin:clamp(12px,1.6vw,18px) auto}
+.label .vint::before,.label .vint::after{content:"";flex:1;height:1px;background:var(--rule)}
+.label .vint span{font-family:var(--display);font-style:italic;color:var(--foil);font-size:1.05rem}
+.label .desc{font-size:1.02rem;color:var(--ivory);max-width:38ch;margin:0 auto 1.1em}
+.label .specs{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:0;margin:0 0 1.4em;padding:0;list-style:none}
+.label .specs li{padding:.2em clamp(10px,1.6vw,22px);border-left:1px solid var(--rule)}
+.label .specs li:first-child{border-left:0}
+.label .specs b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.1;font-variant-numeric:lining-nums tabular-nums}
+.label .specs small{font:500 .62rem/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-dim)}
+.label .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.label .phones{margin-top:1.3em;font-size:.95rem;color:var(--ivory-dim);font-variant-numeric:tabular-nums}
+.label .phones a{color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--rule)}
+.label .phones a:hover{border-color:var(--foil-hi)}
+
+.bottle{position:relative;margin:0;min-height:520px;overflow:hidden;border-radius:999px 999px 4px 4px / 220px 220px 4px 4px;box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.bottle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;transform:scale(1.04);transition:transform 1.6s var(--ease)}
+.bottle:hover img{transform:scale(1.07)}
+.bottle::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(28,12,21,.85));pointer-events:none}
+.bottle figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 28px;display:flex;justify-content:space-between;gap:16px;align-items:end;font-size:.9rem;color:var(--ivory-dim)}
+.bottle figcaption em{font-family:var(--display);font-size:1.25rem;color:var(--ivory)}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .bottle{min-height:440px;order:-1;border-radius:200px 200px 4px 4px / 160px 160px 4px 4px}
+}
+@media (max-width:420px){
+  .label .specs{grid-template-columns:repeat(3,1fr)}
+  .label .specs li{padding-inline:6px}
+  .label .cta .btn{width:100%}
+}
+
+/* Occasions ribbon */
+.occasions{border-block:1px solid var(--rule);background:var(--cab-deep)}
+.occasions ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px clamp(18px,4vw,48px);margin:0;padding:22px 0;list-style:none;font-family:var(--display);font-style:italic;font-size:clamp(1.1rem,2vw,1.45rem);color:var(--ivory-dim)}
+.occasions li{display:flex;align-items:center;gap:clamp(18px,4vw,48px)}
+.occasions li+li::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--foil)}
+
+/* Tasting notes: the one champagne field */
+.notes{background:var(--champ);color:var(--champ-ink);padding-block:clamp(72px,10vw,140px)}
+.notes ::selection{background:var(--cab);color:var(--ivory)}
+.notes-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.notes figure{margin:0;position:sticky;top:110px}
+.notes figure img{width:100%;aspect-ratio:4/5;object-fit:cover;box-shadow:0 30px 60px -34px rgba(42,20,32,.8)}
+.notes figcaption{margin-top:12px;font-size:.88rem;color:var(--champ-dim)}
+.notes h2{margin-bottom:.35em}
+.notes .lede{font-size:1.2rem;line-height:1.55;color:var(--champ-dim);margin-bottom:2.2em}
+.notes dl{margin:0;border-top:1px solid rgba(42,20,32,.35)}
+.notes dl>div{display:grid;grid-template-columns:minmax(120px,.38fr) 1fr;gap:12px 28px;padding:22px 0;border-bottom:1px solid rgba(42,20,32,.35)}
+.notes dt{font-family:var(--display);font-style:italic;font-size:1.5rem;line-height:1.2}
+.notes dd{margin:0;max-width:52ch}
+@media (max-width:860px){
+  .notes-grid{grid-template-columns:1fr}
+  .notes figure{position:static}
+  .notes figure img{aspect-ratio:4/3}
+  .notes dl>div{grid-template-columns:1fr;gap:4px}
+}
+
+/* Technical sheet */
+.tech{padding-block:clamp(80px,11vw,150px)}
+.tech-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px 40px;margin-bottom:clamp(36px,5vw,64px)}
+.tech-head p{color:var(--ivory-dim);margin:0;max-width:44ch}
+.sheet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,6vw,96px);margin:0}
+.sheet>div{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid rgba(201,161,90,.24)}
+.sheet dt{font:500 .72rem/1.4 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-dim);flex:none}
+.sheet dd{margin:0;text-align:right;font-family:var(--display);font-size:1.3rem;line-height:1.3;font-variant-numeric:lining-nums tabular-nums}
+@media (max-width:760px){.sheet{grid-template-columns:1fr}.sheet dd{font-size:1.15rem}}
+
+.venue{margin-top:clamp(56px,8vw,96px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.15fr);gap:0;border:1px solid var(--rule);background:linear-gradient(180deg,rgba(93,34,54,.35),rgba(74,27,44,.15))}
+.venue>div{padding:clamp(26px,3.5vw,44px)}
+.venue>div+div{border-left:1px solid var(--rule)}
+.venue svg{width:44px;height:44px;margin-bottom:18px}
+.venue h3{font-size:clamp(1.6rem,2.6vw,2.1rem);margin-bottom:.35em}
+.venue p{color:var(--ivory-dim);margin:0}
+.venue .ours{background:rgba(201,161,90,.1)}
+.venue .ours h3{font-style:italic;font-weight:400}
+@media (max-width:860px){.venue{grid-template-columns:1fr}.venue>div+div{border-left:0;border-top:1px solid var(--rule)}}
+
+/* Gallery: the cellar */
+.cellar{padding-block:0 clamp(80px,11vw,150px)}
+.cellar h2{margin-bottom:clamp(28px,4vw,48px)}
+.shots{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(120px,14vw,190px);gap:clamp(10px,1.4vw,18px)}
+.shots figure{margin:0;position:relative;overflow:hidden;background:var(--cab-deep)}
+.shots img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter 1.2s var(--ease);filter:saturate(.92)}
+.shots figure:hover img{transform:scale(1.035);filter:saturate(1.05)}
+.shots figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(180deg,transparent,rgba(28,12,21,.88));font-family:var(--display);font-style:italic;font-size:1.05rem}
+.s1{grid-column:1/8;grid-row:span 3}
+.s2{grid-column:8/13;grid-row:span 2}
+.s3{grid-column:8/13;grid-row:span 2}
+.s4{grid-column:1/8;grid-row:span 1}
+.s4 img{object-position:50% 40%}
+@media (max-width:760px){
+  .shots{grid-template-columns:1fr 1fr;grid-auto-rows:auto}
+  .shots figure{grid-column:auto;grid-row:auto;aspect-ratio:3/4}
+  .s1{grid-column:1/-1!important;aspect-ratio:4/5!important}
+  .s4{grid-column:1/-1!important;aspect-ratio:16/10!important}
+}
+
+/* Estate story */
+.estate{background:var(--cab-deep);border-top:1px solid var(--rule);padding-block:clamp(80px,11vw,150px)}
+.estate-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.estate .big{font-family:var(--display);font-size:clamp(1.5rem,2.6vw,2.15rem);line-height:1.3;font-weight:400;max-width:28ch;margin-bottom:1em}
+.estate .big em{color:var(--foil)}
+.estate p{color:var(--ivory-dim)}
+.values{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.values li{display:grid;grid-template-columns:minmax(150px,.5fr) 1fr;gap:8px 28px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.values h3{font-size:1.65rem;font-weight:500}
+.values p{margin:0}
+@media (max-width:860px){.estate-grid{grid-template-columns:1fr}.values li{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{padding-block:clamp(80px,11vw,140px)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px)}
+.faq-grid>div:first-child p{color:var(--ivory-dim);margin-top:1em}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq details:first-of-type{border-top:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-family:var(--display);font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(var(--foil),var(--foil)) center/100% 1.5px no-repeat,linear-gradient(var(--foil),var(--foil)) center/1.5px 100% no-repeat;transition:transform .4s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--foil-hi)}
+.faq details p{color:var(--ivory-dim);padding-bottom:24px;margin:0}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr}}
+
+/* Booking */
+.book{position:relative;background:
+  linear-gradient(90deg,rgba(28,12,21,.96) 0%,rgba(28,12,21,.9) 45%,rgba(28,12,21,.55) 100%),
+  url("assets/night-lawn.jpg") 80% 50%/cover no-repeat;
+  padding-block:clamp(80px,11vw,150px);border-top:1px solid var(--rule)}
+.book-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.book .intro p{color:var(--ivory-dim)}
+.lines{margin:28px 0 0;padding:0;list-style:none}
+.lines li{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid rgba(201,161,90,.22)}
+.lines svg{width:20px;height:20px;flex:none;color:var(--foil)}
+.lines a{font-family:var(--display);font-size:1.35rem;text-decoration:none;font-variant-numeric:tabular-nums}
+.lines a:hover{color:var(--foil-hi)}
+.lines small{display:block;font:500 .64rem/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-dim)}
+
+.card-form{position:relative;background:linear-gradient(180deg,var(--oxblood-2),var(--oxblood));padding:clamp(28px,4vw,52px);box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.card-form::before{content:"";position:absolute;inset:10px;border:1px solid rgba(201,161,90,.5);pointer-events:none}
+.card-form h3{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:.2em}
+.card-form>p{color:var(--ivory-dim);margin-bottom:1.6em}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+.field{display:flex;flex-direction:column;gap:6px;position:relative;z-index:1}
+.field.full{grid-column:1/-1}
+.field label{font:500 .68rem/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ivory-dim)}
+.field label i{font-style:normal;color:var(--foil)}
+.field input,.field textarea{font:400 1rem/1.4 var(--body);color:var(--ivory);background:rgba(28,12,21,.45);border:0;border-bottom:1px solid rgba(201,161,90,.55);border-radius:2px 2px 0 0;padding:12px 12px;caret-color:var(--foil-hi);transition:border-color .3s,background-color .3s}
+.field input::placeholder,.field textarea::placeholder{color:#a8928a}
+.field input:hover,.field textarea:hover{background:rgba(28,12,21,.6)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--foil-hi);background:rgba(28,12,21,.7);box-shadow:0 1px 0 var(--foil-hi)}
+.field input[type=date]::-webkit-calendar-picker-indicator{filter:invert(.85) sepia(.5)}
+.field textarea{min-height:120px;resize:vertical}
+.field .err{display:none;font-size:.85rem;color:#ffb4a8}
+.field.invalid input{border-color:#ff8a7a}
+.field.invalid .err{display:block}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-top:26px;position:relative;z-index:1}
+.form-foot small{color:var(--ivory-dim);font-size:.85rem;max-width:34ch}
+.status{margin-top:16px;font-size:.95rem;color:var(--foil-hi);min-height:1.4em;position:relative;z-index:1}
+@media (max-width:860px){.book-grid{grid-template-columns:1fr}.book{background-position:70% 50%}}
+@media (max-width:520px){.fields{grid-template-columns:1fr}.form-foot .btn{width:100%}}
+
+/* Footer */
+.ftr{background:var(--cab-deep);border-top:1px solid var(--rule);padding-block:56px 40px;font-size:.92rem;color:var(--ivory-dim)}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.ftr .brand svg{width:56px;height:56px}
+.ftr h4{font:500 .66rem/1.3 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--foil);margin:0 0 14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ftr a{text-decoration:none}
+.ftr a:hover{color:var(--ivory)}
+.ftr .base{margin-top:44px;padding-top:20px;border-top:1px solid rgba(201,161,90,.18);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.82rem}
+@media (max-width:760px){.ftr-grid{grid-template-columns:1fr}}
+
+/* The one authored moment: the label is stamped in foil on arrival. */
+@media (prefers-reduced-motion:no-preference){
+  .label .foil{animation:stamp 1.8s var(--ease) .25s both}
+  .label .crest{animation:press 1.1s var(--ease) both}
+  @keyframes stamp{from{--fx:-30%;filter:brightness(.6)}to{--fx:30%;filter:none}}
+  @keyframes press{from{transform:scale(1.08);opacity:.25}to{transform:none;opacity:1}}
+}
+@property --fx{syntax:"<percentage>";inherits:true;initial-value:30%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<!--
+THESIS: Royal Valley presented as an estate release from the Walla Walla valley — the trailer is the vintage, the amenities are tasting notes. Refuses the dark-photo-hero + gold-icon-columns rental template.
+OWN-WORLD: Drenched cabernet ground; oxblood label stock with double foil rules; stamped gold foil on crest and wordmark; one champagne field for tasting notes; Bodoni Moda display, Jost (Futura lineage) small caps; specs set as a winery technical sheet.
+STORY: Visitor sees a beautiful trailer in their own valley, understands 3 climate-controlled stations, learns the venue only needs power and a hose, and calls or sends the booking card.
+FIRST VIEWPORT: Left, the estate label: crest, "Royal Valley / Luxury Restrooms", offer line, 3 · 12′×8′ · A/C specs, Reserve button + both phones. Right, the night string-light photo in a bottle-shoulder arch.
+FORM: Estate Wine Label, pick (top of my ordered list); seed key 6b0ff671.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="crest" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="60" cy="60" r="51" fill="none" stroke="currentColor" stroke-width=".8"/>
+      <path d="M38 47h44l3-17-10 8-7-13-8 12-8-12-7 13-10-8z" fill="currentColor"/>
+      <circle cx="47" cy="27" r="2" fill="currentColor"/><circle cx="60" cy="24" r="2.2" fill="currentColor"/><circle cx="73" cy="27" r="2" fill="currentColor"/>
+      <path d="M17 86 36 60l8 9 14-23 14 21 8-8 23 27z" fill="currentColor"/>
+      <path d="M58 46l-5 8 5-2 4 4 3-3zM36 60l-4 6 4-1 3 3 2-2z" fill="var(--cab,#2a1420)" opacity=".55"/>
+      <path d="M24 92h72" stroke="currentColor" stroke-width="1"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 48 48"><path d="M17 6v10M31 6v10M12 16h24v8a12 12 0 0 1-24 0zM24 36v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-spigot" viewBox="0 0 48 48"><path d="M6 18h22a8 8 0 0 1 8 8v4h-6v-4a2 2 0 0 0-2-2H6zM16 18v-6M10 12h12M33 36c0 2.5-1.5 4-3 4s-3-1.5-3-4 3-6 3-6 3 3.5 3 6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-coil" viewBox="0 0 48 48"><ellipse cx="24" cy="24" rx="16" ry="16" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="24" cy="24" rx="10" ry="10" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="24" cy="24" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M40 24h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Royal Valley Luxury Restrooms, home">
+      <svg class="foil-svg" aria-hidden="true"><use href="#crest"/></svg>
+      <span>Royal Valley<small>Luxury Restrooms</small></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#notes">Amenities</a>
+      <a href="#sheet">Requirements</a>
+      <a href="#cellar">Gallery</a>
+      <a href="#estate">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Contact</a>
+    </nav>
+    <a class="btn btn-foil" href="#book">Book your date</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="label" id="label">
+      <svg class="crest foil-svg" aria-hidden="true"><use href="#crest"/></svg>
+      <p class="sc appellation">Walla Walla Valley · Washington</p>
+      <h1><span class="foil">Royal Valley</span><span class="l2 foil">Luxury Restrooms</span></h1>
+      <div class="vint" aria-hidden="true"><span>Estate restroom trailer</span></div>
+      <p class="desc">A climate-controlled, three-station restroom trailer for weddings, corporate events, and festivals in Walla Walla and nearby.</p>
+      <ul class="specs" aria-label="At a glance">
+        <li><b>3</b><small>Private<br>stations</small></li>
+        <li><b>12′×8′</b><small>Rough<br>footprint</small></li>
+        <li><b>A/C</b><small>Climate<br>controlled</small></li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-foil" href="#book">Book your date</a>
+        <a class="btn btn-line" href="tel:+15092126575"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call us</a>
+      </div>
+      <p class="phones"><a href="tel:+15092126575">(509) 212-6575</a> &nbsp;or&nbsp; <a href="tel:+15093014310">(509) 301-4310</a></p>
+    </div>
+    <figure class="bottle">
+      <img src="assets/night-lights.jpg" width="1350" height="1800" alt="The Royal Valley restroom trailer at night under string lights, three lit doors with handrail steps onto green turf." fetchpriority="high">
+      <figcaption><em>Evening reception</em><span>Lit for after dark</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="occasions" aria-label="Occasions we serve">
+  <ul class="wrap">
+    <li>Weddings</li><li>Corporate events</li><li>Outdoor festivals</li><li>Private celebrations</li>
+  </ul>
+</div>
+
+<section class="notes" id="notes" aria-labelledby="notes-h">
+  <div class="wrap notes-grid">
+    <figure>
+      <img src="assets/interior.jpg" width="1040" height="1400" loading="lazy" alt="Inside a station: wood-look floor, vanity with sink and mirror, framed valley photograph, toilet and urinal.">
+      <figcaption>Inside a station: vanity, mirror, wood-look floor, real fixtures.</figcaption>
+    </figure>
+    <div>
+      <h2 id="notes-h">Tasting notes <em>for the restroom</em></h2>
+      <p class="lede">Guests step out of the vineyard heat or the evening chill into something that feels like the inside of the venue, not the edge of the parking lot.</p>
+      <dl>
+        <div><dt>Climate</dt><dd>Air-conditioned and temperature-regulated, so every station stays comfortable whatever the valley weather is doing.</dd></div>
+        <div><dt>Finish</dt><dd>Upscale decor and premium toiletries for a genuinely lavish experience.</dd></div>
+        <div><dt>Fixtures</dt><dd>Modern fixtures in spacious stations with a vanity, sink, and mirror.</dd></div>
+        <div><dt>Arrival</dt><dd>Steps up to every door with supportive handrails, easy for guests of any age. And we roll out the green carpet.</dd></div>
+        <div><dt>After dark</dt><dd>Night lighting inside and out, so the party keeps going after sunset.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="tech" id="sheet" aria-labelledby="sheet-h">
+  <div class="wrap">
+    <div class="tech-head">
+      <h2 id="sheet-h">Technical <em>sheet</em></h2>
+      <p>Everything a planner or venue needs to know before booking, on one page.</p>
+    </div>
+    <dl class="sheet">
+      <div><dt>Appellation</dt><dd>Walla Walla &amp; nearby</dd></div>
+      <div><dt>Stations</dt><dd>3 private</dd></div>
+      <div><dt>Footprint</dt><dd>About 12′ × 8′</dd></div>
+      <div><dt>Climate</dt><dd>Air-conditioned</dd></div>
+      <div><dt>Access</dt><dd>Steps &amp; handrails at each door</dd></div>
+      <div><dt>Lighting</dt><dd>Night lighting</dd></div>
+      <div><dt>Arrival</dt><dd>Green carpet at the steps</dd></div>
+      <div><dt>Ownership</dt><dd>Local, Walla Walla, WA</dd></div>
+    </dl>
+
+    <div class="venue" aria-label="Venue requirements">
+      <div>
+        <svg class="foil-svg" aria-hidden="true"><use href="#i-plug"/></svg>
+        <h3>A power outlet</h3>
+        <p>The trailer plugs into standard power at your venue for climate control and lighting.</p>
+      </div>
+      <div>
+        <svg class="foil-svg" aria-hidden="true"><use href="#i-spigot"/></svg>
+        <h3>A hose outlet</h3>
+        <p>One water spigot within reach. That is the whole list of what your venue provides.</p>
+      </div>
+      <div class="ours">
+        <svg class="foil-svg" aria-hidden="true"><use href="#i-coil"/></svg>
+        <h3>We bring the rest</h3>
+        <p>No hoses or cables needed from you. We take care of everything so the rental runs smoothly from setup to pickup.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cellar" id="cellar" aria-labelledby="cellar-h">
+  <div class="wrap">
+    <h2 id="cellar-h">From the <em>cellar</em></h2>
+    <div class="shots">
+      <figure class="s1"><img src="assets/venue-turf.jpg" width="1800" height="1350" loading="lazy" alt="The trailer parked at a venue in daylight, three doors with steps down onto a green turf mat."><figcaption>At the venue, green carpet out</figcaption></figure>
+      <figure class="s2"><img src="assets/day-gravel.jpg" width="1350" height="1800" loading="lazy" alt="The trailer in bright afternoon sun on a gravel pad, three sets of steps with handrails."><figcaption>Afternoon, on gravel</figcaption></figure>
+      <figure class="s3"><img src="assets/night-lawn.jpg" width="1296" height="1600" loading="lazy" alt="The trailer at night on a lawn with its running lights on."><figcaption>After dark, on the lawn</figcaption></figure>
+      <figure class="s4"><img src="assets/night-lights.jpg" width="1350" height="1800" loading="lazy" alt="Close view of the lit station doors at night under string lights."><figcaption>String lights &amp; lit doors</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="estate" id="estate" aria-labelledby="estate-h">
+  <div class="wrap estate-grid">
+    <div>
+      <h2 id="estate-h" style="margin-bottom:.5em">Grown <em>in the valley</em></h2>
+      <p class="big">Locally owned and operated from <em>Walla Walla, WA</em>, with experience in the portable restroom industry.</p>
+      <p>Royal Valley started as a start-up project with one idea: bring real luxury to every occasion. Today we serve weddings, corporate events, outdoor festivals, and many more, with upscale, climate-controlled restrooms and the kind of service that brings guests back.</p>
+    </div>
+    <ul class="values" aria-label="Our core values">
+      <li><h3>Excellence</h3><p>Luxury restroom service held to the highest standard of comfort and elegance.</p></li>
+      <li><h3>Innovation</h3><p>We keep improving our amenities to offer the best portable restroom for any event.</p></li>
+      <li><h3>Client satisfaction</h3><p>Every guest should leave the station feeling looked after.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div>
+      <h2 id="faq-h">Questions, <em>answered</em></h2>
+      <p>Anything else is a phone call away: <a href="tel:+15092126575">(509) 212-6575</a>.</p>
+    </div>
+    <div>
+      <details open><summary>What should I have at my venue?</summary><p>Only a power outlet and a hose outlet. See the full requirements in the <a href="#sheet">technical sheet</a>.</p></details>
+      <details><summary>Do I need any hoses or cables?</summary><p>No. We take care of everything so the rental runs smoothly and efficiently.</p></details>
+      <details><summary>How much space does the trailer need?</summary><p>The trailer is roughly 12′ × 8′, plus room for the steps at each of the three doors.</p></details>
+      <details><summary>What kinds of events do you serve?</summary><p>Weddings, corporate events, outdoor festivals, private parties, and more, in Walla Walla and nearby locations.</p></details>
+      <details><summary>Can guests of any age use it comfortably?</summary><p>Yes. Each door has steps with supportive handrails for easy access.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book" aria-labelledby="book-h">
+  <div class="wrap book-grid">
+    <div class="intro">
+      <h2 id="book-h">Reserve <em>your date</em></h2>
+      <p style="margin-top:1em">Tell us about your event and we’ll get back to you. Prefer to talk? Call either line.</p>
+      <ul class="lines">
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><small>Phone</small><a href="tel:+15092126575">(509) 212-6575</a></div></li>
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><small>Phone</small><a href="tel:+15093014310">(509) 301-4310</a></div></li>
+        <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:Rvl.restrooms@gmail.com">Rvl.restrooms@gmail.com</a></div></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><small>Based in</small><span style="font-family:var(--display);font-size:1.35rem">Walla Walla, WA</span></div></li>
+      </ul>
+    </div>
+    <form class="card-form" id="bookForm" novalidate>
+      <h3>Booking card</h3>
+      <p>Fields marked <span style="color:var(--foil)">*</span> are required.</p>
+      <div class="fields">
+        <div class="field"><label for="first">First name <i>*</i></label><input id="first" name="first" autocomplete="given-name" required><span class="err">Please add your first name.</span></div>
+        <div class="field"><label for="last">Last name</label><input id="last" name="last" autocomplete="family-name"></div>
+        <div class="field"><label for="phone">Phone <i>*</i></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="[0-9()+\-.\s]{7,}"><span class="err">Please add a phone number we can call back.</span></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="err">That email looks incomplete.</span></div>
+        <div class="field full"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
+        <div class="field full"><label for="msg">About your event</label><textarea id="msg" name="msg" placeholder="Venue, guest count, hours, anything we should know"></textarea></div>
+      </div>
+      <div class="form-foot">
+        <button class="btn btn-foil" type="submit">Send booking request</button>
+        <small>Opens your email app with the details filled in.</small>
+      </div>
+      <p class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="brand" href="#top"><svg class="foil-svg" aria-hidden="true"><use href="#crest"/></svg><span>Royal Valley<small>Luxury Restrooms</small></span></a>
+        <p style="margin-top:16px;max-width:34ch">Upscale, climate-controlled event restrooms. Locally owned in Walla Walla, WA.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15092126575">(509) 212-6575</a></li>
+          <li><a href="tel:+15093014310">(509) 301-4310</a></li>
+          <li><a href="mailto:Rvl.restrooms@gmail.com">Rvl.restrooms@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="#notes">Amenities</a></li>
+          <li><a href="#sheet">Requirements</a></li>
+          <li><a href="https://www.facebook.com/p/Royal-Valley-Luxury-Restrooms-WW-61554362073352/" rel="noopener" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="base"><span>© <span id="yr">2026</span> Royal Valley Luxury Restrooms</span><span>Walla Walla, Washington</span></div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.textContent = open ? 'Close' : 'Menu';
+  });
+  nav.addEventListener('click', e => { if (e.target.tagName === 'A') { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); btn.textContent = 'Menu'; } });
+
+  // Foil sheen follows the pointer across the label
+  const label = document.getElementById('label');
+  if (matchMedia('(hover:hover) and (prefers-reduced-motion:no-preference)').matches) {
+    label.addEventListener('pointermove', e => {
+      const r = label.getBoundingClientRect();
+      const x = ((e.clientX - r.left) / r.width) * 100;
+      label.style.setProperty('--fx', (x * 1.2 - 10).toFixed(1) + '%');
+    });
+    label.addEventListener('pointerleave', () => label.style.removeProperty('--fx'));
+  }
+
+  // Booking form → prefilled email (no backend yet)
+  const form = document.getElementById('bookForm'), status = form.querySelector('.status');
+  const check = el => {
+    const f = el.closest('.field');
+    const ok = el.checkValidity() && (!el.required || el.value.trim() !== '');
+    f.classList.toggle('invalid', !ok);
+    el.setAttribute('aria-invalid', !ok);
+    return ok;
+  };
+  form.querySelectorAll('input').forEach(el => el.addEventListener('blur', () => el.value && check(el)));
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const els = [...form.querySelectorAll('input[required], input[type=email]')];
+    const bad = els.filter(el => !check(el));
+    if (bad.length) { bad[0].focus(); status.textContent = 'A couple of details are missing. Check the highlighted fields.'; return; }
+    const d = Object.fromEntries(new FormData(form));
+    const name = [d.first, d.last].filter(Boolean).join(' ');
+    const body = [
+      `Name: ${name}`, `Phone: ${d.phone}`, d.email && `Email: ${d.email}`,
+      d.date && `Event date: ${d.date}`, '', d.msg || ''
+    ].filter(v => v !== undefined && v !== false && v !== '' || v === '').join('\n');
+    location.href = `mailto:Rvl.restrooms@gmail.com?subject=${encodeURIComponent('Booking request from ' + name)}&body=${encodeURIComponent(body)}`;
+    status.textContent = 'Your email app should open with the request ready to send. If it doesn’t, call (509) 212-6575.';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "title": "Choose the visual world for Royal Valley",
+  "question": "The roll assigned the Fair Show-Print. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Grand Champion Show-Print",
+      "kicker": "THE ROLL",
+      "lineage": "Walla Walla Fair & Frontier Days letterpress posters, blue-ribbon premium books",
+      "thesis": "The trailer billed like the headline act of the valley's season: a letterpress show poster that names it Grand Champion of event restrooms.",
+      "palette": ["#1d37a0", "#f6f1e6", "#e9b23a", "#a3253a", "#141629"],
+      "materials": ["wood-type letterpress", "split-fountain ink fade", "rosette ribbon", "real night photography"],
+      "viewport": "Full-bleed royal-blue poster sheet: stacked wood-type 'ROYAL VALLEY' cropped by the edge, wine-to-gold split-fountain rule, the night string-light photo set in like a halftone plate, rosette badge '3 STATIONS · CLIMATE CONTROLLED', two phone numbers as the ticket line, Book button as the admission stub.",
+      "risk": "Fair/rodeo vernacular could read folksy for a black-tie wedding if the ink and type are set cheaply.",
+      "raised": [
+        {"from": "challenger-scher", "raise": "Type is set at architectural scale and cropped by the frame, not politely centered."},
+        {"from": "challenger-forge", "raise": "Every spec (12′ × 8′, 3 stations, 2 hookups) ruled as measured, tabular figures like chalk marks."},
+        {"from": "challenger-splitflap", "raise": "Signature interaction: each station door's VACANT/OCCUPIED indicator flips character-by-character."},
+        {"from": "challenger-laban", "raise": "Center-axis symmetry is the layout law of every poster sheet."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Estate Wine Label",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Walla Walla AVA estate labels and tasting-room menus",
+      "thesis": "The trailer presented like an estate release: 'Station No. 1, 2, 3' set as a vintage label with tasting notes for comfort.",
+      "palette": ["#2a1420", "#ece2d0", "#b08a4a", "#5d2236"],
+      "materials": ["foil stamping", "laid label paper", "embossed crest"],
+      "viewport": "A single tall label centered on deep cabernet: crest, 'Royal Valley — Estate Restroom — Walla Walla', tasting notes listing amenities.",
+      "risk": "The most familiar luxury look in this category and in wine country; it is where most runs land."
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Hand-Bent Neon",
+      "verdict": "competitive",
+      "lineage": "hand-bent neon signage",
+      "thesis": "The brand as one continuous neon script that lights up when the party goes past dark.",
+      "palette": ["#0b0d1a", "#3d6bff", "#ff3b5c", "#f2efe6"],
+      "materials": ["glass tube glow", "dark room", "electrode ends"],
+      "viewport": "Night photo, dark ground; 'Royal Valley' bends and ignites as one cobalt stroke above the trailer.",
+      "case": "Wedding neon signs are a real trope, so couples identify; loses on clarity since neon says bar, not restroom comfort.",
+      "risk": "Can tip into nightclub and lose daytime corporate bookers.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    },
+    {
+      "id": "challenger-scher",
+      "label": "Street Typography",
+      "verdict": "declined",
+      "lineage": "public theater street posters",
+      "thesis": "Wood-type capitals shouting at architectural scale.",
+      "palette": ["#f6d32b", "#ffffff", "#111111", "#e5462a"],
+      "materials": ["wood type", "diagonal baselines"],
+      "viewport": "Yellow wall, cropped stacked caps.",
+      "case": "Same family as the roll but urban NYC, not the valley; loses audience identification and ties on clarity.",
+      "kept": "Architectural-scale type cropped by the frame.",
+      "risk": "Shouts too hard for weddings.",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-scher-street-typography-hero.webp"
+    },
+    {
+      "id": "challenger-splitflap",
+      "label": "Split-Flap Board",
+      "verdict": "declined",
+      "lineage": "rail concourse departure boards",
+      "thesis": "Event dates and stations as a departures board.",
+      "palette": ["#111111", "#ffffff", "#f2a900", "#8a8f96"],
+      "materials": ["flap cells", "brushed steel"],
+      "viewport": "Black board of station rows.",
+      "case": "No real availability data to show; bookers don't identify with transit.",
+      "kept": "Character-by-character flip for state change (VACANT/OCCUPIED).",
+      "risk": "Implies live availability that doesn't exist.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    },
+    {
+      "id": "challenger-forge",
+      "label": "Blacksmith Forge",
+      "verdict": "declined",
+      "lineage": "power-hammer forging",
+      "thesis": "Brutal heat and measured blows.",
+      "palette": ["#121212", "#6b6f73", "#ff6a1a", "#fff2c4"],
+      "materials": ["scale flecks", "stencil caps"],
+      "viewport": "One blow per row.",
+      "case": "No link to events or comfort.",
+      "kept": "Specs ruled as measured tabular figures.",
+      "risk": "Hostile to the luxury promise."
+    },
+    {
+      "id": "challenger-laban",
+      "label": "Labanotation Score",
+      "verdict": "declined",
+      "lineage": "dance notation",
+      "thesis": "A vertical symmetric score.",
+      "palette": ["#ffffff", "#111111", "#cfcfcf"],
+      "materials": ["score paper", "hatched blocks"],
+      "viewport": "Center staff read upward.",
+      "case": "Unreadable to bookers; no product carrier.",
+      "kept": "Center-axis symmetry as layout law.",
+      "risk": "Abstract to the point of confusion."
+    },
+    {
+      "id": "challenger-ink",
+      "label": "Suminagashi Basin",
+      "verdict": "declined",
+      "lineage": "Japanese ink marbling",
+      "thesis": "A live fluid ink surface.",
+      "palette": ["#1b2a5a", "#f4f4f1", "#5a5f6a"],
+      "materials": ["marbled ink", "WebGL fluid"],
+      "viewport": "Ink basin with quiet margins.",
+      "case": "Pretty but says nothing about restrooms or events.",
+      "kept": "Nothing material for this product.",
+      "risk": "Decoration without a message."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "Luxury restroom trailer site: dark photo hero, gold accents, amenity icons, gallery, contact form, done impeccably.",
+    "palette": ["#0f0f10", "#ffffff", "#c8a55a"],
+    "materials": ["full-bleed photography", "clean grid"],
+    "viewport": "Night trailer photo full-bleed, headline, Book Now button, three amenity columns below.",
+    "risk": "Indistinguishable from every other luxury-trailer rental by design."
+  },
+  "steer": true
+}

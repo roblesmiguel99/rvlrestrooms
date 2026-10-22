@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T02:49:50.706103+00:00",
+  "title": "Design System: Royal Valley Luxury Restrooms",
+  "extensions": {
+    "colorMeta": {
+      "lobby": {
+        "role": "neutral",
+        "displayName": "Lobby Green",
+        "canonical": "oklch(29.1% 0.039 177)",
+        "tonalRamp": [
+          "#00100b",
+          "#0a2a23",
+          "#28473f",
+          "#46655d",
+          "#65857d",
+          "#85a79e",
+          "#aacdc3",
+          "#d4f8ee"
+        ]
+      },
+      "lobby-deep": {
+        "role": "neutral",
+        "displayName": "Night Lobby",
+        "canonical": "oklch(23.1% 0.031 177)",
+        "tonalRamp": [
+          "#000f0b",
+          "#122924",
+          "#2e453f",
+          "#4b645d",
+          "#6a847d",
+          "#8ba59e",
+          "#b0cbc4",
+          "#daf6ee"
+        ]
+      },
+      "lobby-2": {
+        "role": "neutral",
+        "displayName": "Lobby Shade",
+        "canonical": "oklch(34.1% 0.046 175)",
+        "tonalRamp": [
+          "#00110a",
+          "#042b23",
+          "#23483e",
+          "#41665c",
+          "#60877c",
+          "#81a89d",
+          "#a6cec3",
+          "#d0f9ed"
+        ]
+      },
+      "linen": {
+        "role": "secondary",
+        "displayName": "Linen Card Stock",
+        "canonical": "oklch(92.6% 0.014 85)",
+        "tonalRamp": [
+          "#0e0b05",
+          "#27241c",
+          "#433f37",
+          "#615d55",
+          "#817d74",
+          "#a39e95",
+          "#c8c4ba",
+          "#f3eee4"
+        ]
+      },
+      "linen-2": {
+        "role": "secondary",
+        "displayName": "Linen Card Stock, shade",
+        "canonical": "oklch(87.8% 0.020 85)",
+        "tonalRamp": [
+          "#0f0a03",
+          "#292319",
+          "#453f34",
+          "#635d51",
+          "#837d70",
+          "#a49e90",
+          "#cac3b6",
+          "#f5eedf"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(25.2% 0.025 165)",
+        "tonalRamp": [
+          "#020e09",
+          "#182821",
+          "#33443c",
+          "#51625a",
+          "#70827a",
+          "#90a49a",
+          "#b6cac0",
+          "#e0f4ea"
+        ]
+      },
+      "ink-dim": {
+        "role": "neutral",
+        "displayName": "Ink Dim",
+        "canonical": "oklch(44.0% 0.019 160)",
+        "tonalRamp": [
+          "#050e08",
+          "#1c2721",
+          "#37433c",
+          "#55615a",
+          "#748179",
+          "#95a29a",
+          "#bac8c0",
+          "#e4f3ea"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Lobby Text",
+        "canonical": "oklch(92.9% 0.014 85)",
+        "tonalRamp": [
+          "#0e0b05",
+          "#27241c",
+          "#433f37",
+          "#615d55",
+          "#817d74",
+          "#a39e95",
+          "#c8c4ba",
+          "#f3eee4"
+        ]
+      },
+      "text-dim": {
+        "role": "neutral",
+        "displayName": "Lobby Text Dim",
+        "canonical": "oklch(80.7% 0.021 150)",
+        "tonalRamp": [
+          "#050e07",
+          "#1d271f",
+          "#38433a",
+          "#566157",
+          "#758177",
+          "#96a298",
+          "#bbc8bd",
+          "#e5f3e7"
+        ]
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Hotel Brass",
+        "canonical": "oklch(68.4% 0.087 75)",
+        "tonalRamp": [
+          "#1e0200",
+          "#3b1b00",
+          "#5a3700",
+          "#7a561b",
+          "#9b763e",
+          "#be975f",
+          "#e5bd84",
+          "#ffe7ad"
+        ]
+      },
+      "brass-hi": {
+        "role": "primary",
+        "displayName": "Polished Brass",
+        "canonical": "oklch(83.4% 0.074 83)",
+        "tonalRamp": [
+          "#190500",
+          "#351f00",
+          "#523b02",
+          "#725a28",
+          "#937948",
+          "#b59b68",
+          "#dbc18d",
+          "#ffebb6"
+        ]
+      },
+      "brass-lo": {
+        "role": "primary",
+        "displayName": "Aged Brass",
+        "canonical": "oklch(51.6% 0.070 76)",
+        "tonalRamp": [
+          "#1b0400",
+          "#371e00",
+          "#553a0b",
+          "#74582d",
+          "#96784c",
+          "#b8996d",
+          "#dfbe91",
+          "#ffe9ba"
+        ]
+      },
+      "brass-ink": {
+        "role": "neutral",
+        "displayName": "Brass Ink",
+        "canonical": "oklch(45.3% 0.059 73)",
+        "tonalRamp": [
+          "#190500",
+          "#351f00",
+          "#523b19",
+          "#725937",
+          "#937856",
+          "#b59976",
+          "#dcbf9b",
+          "#ffe9c4"
+        ]
+      },
+      "oxblood": {
+        "role": "tertiary",
+        "displayName": "Oxblood",
+        "canonical": "oklch(41.0% 0.107 23)",
+        "tonalRamp": [
+          "#270000",
+          "#4b0008",
+          "#6d2224",
+          "#904240",
+          "#b4625f",
+          "#d9837f",
+          "#ffa8a4",
+          "#ffd7d2"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Brass Hairline",
+        "canonical": "rgba(185,146,90,.38)",
+        "tonalRamp": [
+          "rgba(185,146,90,.16)",
+          "rgba(185,146,90,.2)",
+          "rgba(185,146,90,.22)",
+          "rgba(185,146,90,.38)",
+          "rgba(185,146,90,.45)",
+          "rgba(185,146,90,.6)",
+          "rgba(185,146,90,.8)",
+          "rgba(185,146,90,1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; one phrase may be polished brass, upright."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Item names on linen, FAQ questions, spec and contact values."
+      },
+      "plate": {
+        "displayName": "Engraved Plate",
+        "purpose": "VACANT/RESERVED, No. n door plates, value names: text that would be engraved."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs, max 62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tags, chips, field labels, spec terms, footer heads."
+      },
+      "button": {
+        "displayName": "Button Label",
+        "purpose": "All button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "framed-photo",
+        "value": "0 40px 80px -40px rgba(0,0,0,.85)",
+        "purpose": "Framed photos and the registration card."
+      },
+      {
+        "name": "card-stock",
+        "value": "0 30px 60px -30px rgba(0,0,0,.8), 0 2px 4px rgba(0,0,0,.2)",
+        "purpose": "Turndown card and check-in slip."
+      },
+      {
+        "name": "station-door",
+        "value": "0 30px 50px -36px rgba(0,0,0,.9), inset 0 0 0 1px rgba(0,0,0,.06)",
+        "purpose": "Station door panels."
+      },
+      {
+        "name": "hung-card",
+        "value": "drop-shadow(0 22px 26px rgba(0,0,0,.45))",
+        "purpose": "Door hanger (filter, so the punched hole casts)."
+      },
+      {
+        "name": "push-plate",
+        "value": "0 8px 18px -10px rgba(0,0,0,.7)",
+        "purpose": "Brass button at rest; hover 0 12px 22px -10px rgba(0,0,0,.75); pressed 0 2px 6px -4px rgba(0,0,0,.6)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing for all state transitions and flips."
+      },
+      {
+        "name": "state",
+        "value": "300ms",
+        "purpose": "Color, border, background, shadow changes."
+      },
+      {
+        "name": "press",
+        "value": "180ms",
+        "purpose": "Button press translate/scale."
+      },
+      {
+        "name": "tilt",
+        "value": "400ms",
+        "purpose": "Key-tag tilt, FAQ toggle rotation."
+      },
+      {
+        "name": "flip",
+        "value": "800-900ms",
+        "purpose": "Mini sign and door hanger rotateY flips."
+      },
+      {
+        "name": "sway",
+        "value": "5s ease-in-out, once, 1.2s delay",
+        "purpose": "Hero door hanger settles once on load."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "All animation and transitions disabled."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-collapse",
+        "value": "1040px"
+      },
+      {
+        "name": "hero-stack",
+        "value": "900px"
+      },
+      {
+        "name": "grid-stack",
+        "value": "860px"
+      },
+      {
+        "name": "compact",
+        "value": "760px"
+      },
+      {
+        "name": "form-single",
+        "value": "520px"
+      },
+      {
+        "name": "phone",
+        "value": "480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Brass Push-Plate Button",
+      "kind": "button",
+      "refersTo": "button-brass",
+      "description": "Primary action: Reserve / Book your date.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-btn ds-btn-brass\" href=\"#\">Reserve your date</a></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby);padding:32px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:.85em 1.5em;font:600 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:4px;cursor:pointer;border:1px solid transparent;transition:background-color .3s var(--ease),color .3s var(--ease),box-shadow .3s var(--ease),transform .18s var(--ease)} .ds-btn:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px} .ds-btn:active{transform:translateY(2px) scale(.985);box-shadow:0 2px 6px -4px rgba(0,0,0,.6)} .ds-btn-brass{background:var(--brass);color:var(--lobby-deep);box-shadow:0 8px 18px -10px rgba(0,0,0,.7)} .ds-btn-brass:hover{background:var(--brass-hi);box-shadow:0 12px 22px -10px rgba(0,0,0,.75)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action beside the brass plate, e.g. Call us.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>Call us</a></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby);padding:32px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:.85em 1.5em;font:600 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:4px;cursor:pointer;border:1px solid transparent;transition:background-color .3s var(--ease),color .3s var(--ease),box-shadow .3s var(--ease),transform .18s var(--ease)} .ds-btn:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px} .ds-btn:active{transform:translateY(2px) scale(.985);box-shadow:0 2px 6px -4px rgba(0,0,0,.6)} .ds-btn-ghost{color:var(--text);border-color:var(--rule);background:transparent} .ds-btn-ghost:hover{border-color:var(--brass);background:rgba(185,146,90,.1)}"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Submit action on linen card stock.",
+      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn-ink\">Send booking request</button></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:linear-gradient(180deg,var(--linen),var(--linen-2));padding:32px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:48px;padding:.85em 1.5em;font:600 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:4px;cursor:pointer;border:1px solid transparent;transition:background-color .3s var(--ease),color .3s var(--ease),box-shadow .3s var(--ease),transform .18s var(--ease)} .ds-btn:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px} .ds-btn:active{transform:translateY(2px) scale(.985);box-shadow:0 2px 6px -4px rgba(0,0,0,.6)} .ds-btn-ink{background:var(--lobby);color:var(--text)} .ds-btn-ink:hover{background:var(--lobby-2)}"
+    },
+    {
+      "name": "Key-Tag Nav",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Header nav items as key-tag fobs with a brass-ringed hole and tether; tilt on hover.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-tag\" href=\"#\">Stations</a><a class=\"ds-tag\" href=\"#\">Amenities</a><a class=\"ds-tag\" href=\"#\">FAQ</a></nav>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-nav{display:flex;gap:8px;background:rgba(11,34,29,.95);padding:24px} .ds-tag{position:relative;display:inline-flex;align-items:center;margin-left:8px;padding:9px 14px 9px 28px;border-radius:999px 6px 6px 999px;font:500 .74rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--text-dim);background:rgba(185,146,90,.1);transform-origin:0 50%;transition:color .3s,background-color .3s,transform .4s var(--ease)} .ds-tag::before{content:'';position:absolute;left:9px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--lobby-deep);box-shadow:0 0 0 1.5px var(--brass)} .ds-tag::after{content:'';position:absolute;left:-9px;top:50%;width:19px;height:1.5px;margin-top:-.75px;background:var(--brass);opacity:.7} .ds-tag:hover{color:var(--text);background:rgba(185,146,90,.2);transform:rotate(-3deg)} .ds-tag:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px}"
+    },
+    {
+      "name": "Fact Chip",
+      "kind": "chip",
+      "refersTo": "fact-chip",
+      "description": "Static at-a-glance facts in the hero.",
+      "html": "<div class=\"ds-stage\"><span class=\"ds-chip\">3 private stations</span> <span class=\"ds-chip\">Air-conditioned</span></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby);padding:24px;display:flex;gap:10px} .ds-chip{font:500 .74rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:999px;background:rgba(185,146,90,.12);color:var(--brass-hi)}"
+    },
+    {
+      "name": "Linen Card Stock",
+      "kind": "card",
+      "refersTo": "linen-card",
+      "description": "Turndown card / check-in slip: the container for content guests act on.",
+      "html": "<div class=\"ds-stage\"><article class=\"ds-card\"><h3>In every room</h3><p>What your guests find when they open the door.</p><ul><li><b>Climate control</b><span>Comfortable in any valley weather.</span></li><li><b>Night lighting</b><span>Lit so the event keeps going after sunset.</span></li></ul><p class=\"ds-sig\">With compliments, Royal Valley</p></article></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby);padding:40px} .ds-card{position:relative;max-width:420px;background:linear-gradient(180deg,var(--linen),var(--linen-2));color:var(--ink);padding:36px;border-radius:3px;transform:rotate(-1.2deg);box-shadow:0 30px 60px -30px rgba(0,0,0,.8),0 2px 4px rgba(0,0,0,.2);font:400 1rem/1.6 var(--body)} .ds-card::before{content:'';position:absolute;inset:10px;border:1px solid rgba(127,98,55,.45);pointer-events:none} .ds-card h3{font:400 2rem/1.06 var(--display);margin:0 0 .3em} .ds-card p{color:var(--ink-dim);margin:0 0 1em} .ds-card ul{list-style:none;margin:0;padding:0} .ds-card li{padding:14px 0;border-top:1px solid rgba(22,38,31,.16)} .ds-card li b{display:block;font:400 1.3rem/1.2 var(--display)} .ds-card li span{color:var(--ink-dim)} .ds-card .ds-sig{font-family:var(--display);font-style:italic;color:#6a5130;margin:16px 0 0}"
+    },
+    {
+      "name": "Registration Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Form line on the linen registration card.",
+      "html": "<div class=\"ds-stage\"><label class=\"ds-field\"><span>Phone <i>*</i></span><input type=\"tel\" placeholder=\"(509) 000-0000\"></label></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:linear-gradient(180deg,var(--linen),var(--linen-2));padding:32px} .ds-field{display:flex;flex-direction:column;gap:6px;max-width:320px} .ds-field span{font:600 .66rem/1.3 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim)} .ds-field i{font-style:normal;color:var(--oxblood)} .ds-field input{font:400 1rem/1.4 var(--body);color:var(--ink);background:rgba(255,255,255,.55);border:0;border-bottom:1.5px solid rgba(22,38,31,.35);border-radius:3px 3px 0 0;padding:12px;caret-color:var(--oxblood);transition:border-color .3s,background-color .3s} .ds-field input::placeholder{color:#5d655f} .ds-field input:hover{background:rgba(255,255,255,.75)} .ds-field input:focus{outline:none;border-color:var(--lobby);background:#fff;box-shadow:0 1.5px 0 var(--lobby)}"
+    },
+    {
+      "name": "Station Door",
+      "kind": "custom",
+      "refersTo": "station-no-plate",
+      "description": "Linen door with lobby sign, brass No. plate and a mini hanger on a brass knob that flips to OCCUPIED.",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-unit\" tabindex=\"0\"><span class=\"ds-sign\"></span><span class=\"ds-no\">No. 1</span><span class=\"ds-mini\"><span class=\"ds-knob\"></span><span class=\"ds-mini-in\"><b>Vacant</b><b>Occupied</b></span></span></div></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby-deep);padding:32px} .ds-unit{position:relative;width:200px;aspect-ratio:1/1.05;background:linear-gradient(180deg,#f3f0ea,#e4dfd5);border-radius:4px;display:flex;flex-direction:column;align-items:center;padding:20px;box-shadow:0 30px 50px -36px rgba(0,0,0,.9),inset 0 0 0 1px rgba(0,0,0,.06)} .ds-unit::before{content:'';position:absolute;inset:12% 11% 9%;border:1px solid rgba(22,38,31,.16);border-radius:2px} .ds-sign{width:48px;height:48px;background:var(--lobby-deep);border-radius:4px;margin-top:10px} .ds-no{font-family:var(--plate);font-size:.9rem;letter-spacing:.16em;margin-top:14px;padding:5px 12px 4px;border-radius:2px;background:var(--brass);color:var(--lobby-deep);box-shadow:0 2px 4px -2px rgba(0,0,0,.4)} .ds-mini{position:absolute;right:10px;top:56%;width:66px;perspective:600px} .ds-knob{position:absolute;left:50%;top:3px;margin-left:-6px;z-index:2;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--brass-hi),var(--brass-lo));box-shadow:0 2px 3px rgba(0,0,0,.35)} .ds-mini-in{display:grid;transform-style:preserve-3d;transition:transform .8s var(--ease)} .ds-mini b{grid-area:1/1;backface-visibility:hidden;font:600 .62rem/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:22px 4px 10px;border-radius:9px 9px 4px 4px;text-align:center;color:var(--linen);-webkit-mask:radial-gradient(circle at 50% 9px,transparent 5px,#000 6px);mask:radial-gradient(circle at 50% 9px,transparent 5px,#000 6px)} .ds-mini b:first-child{background:var(--lobby)} .ds-mini b:last-child{background:var(--oxblood);transform:rotateY(180deg)} .ds-unit:hover .ds-mini-in,.ds-unit:focus-visible .ds-mini-in{transform:rotateY(180deg)} .ds-unit:focus-visible{outline:2px solid var(--brass-hi);outline-offset:4px}"
+    },
+    {
+      "name": "Door Hanger",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Die-cut linen hanger with a punched hole; flips VACANT to RESERVED (oxblood).",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-hanger\" tabindex=\"0\"><div class=\"ds-face ds-front\"><div class=\"ds-state\">Vacant</div><span>Walla Walla, WA</span></div><div class=\"ds-face ds-back\"><div class=\"ds-state\">Reserved</div><span>For your event</span></div></div></div>",
+      "css": ":host{--lobby:#13322b;--lobby-deep:#0b221d;--lobby-2:#1b4037;--linen:#ebe6dc;--linen-2:#ddd6c8;--ink:#16261f;--ink-dim:#4a564f;--text:#ece7dd;--text-dim:#b7c4b9;--brass:#b9925a;--brass-hi:#e0c591;--brass-lo:#7f6237;--oxblood:#7a2e2e;--rule:rgba(185,146,90,.38);--ease:cubic-bezier(.16,1,.3,1);--display:'Gilda Display',Didot,serif;--plate:'Marcellus SC','Trajan Pro',serif;--body:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif} .ds-stage{background:var(--lobby);padding:32px;perspective:1100px} .ds-hanger{display:grid;width:220px;transform-style:preserve-3d;transition:transform .9s var(--ease)} .ds-hanger:hover,.ds-hanger:focus-visible{transform:rotateY(180deg)} .ds-hanger:focus-visible{outline:2px solid var(--brass-hi);outline-offset:3px} .ds-face{grid-area:1/1;backface-visibility:hidden;border-radius:18px 18px 10px 10px;padding:104px 20px 24px;text-align:center;-webkit-mask:radial-gradient(circle at 50% 52px,transparent 27px,#000 28px);mask:radial-gradient(circle at 50% 52px,transparent 27px,#000 28px);filter:drop-shadow(0 22px 26px rgba(0,0,0,.45))} .ds-front{background:linear-gradient(180deg,var(--linen),var(--linen-2));color:var(--ink)} .ds-back{background:linear-gradient(180deg,#8a3636,var(--oxblood));color:var(--linen);transform:rotateY(180deg)} .ds-state{font-family:var(--plate);font-size:2rem;letter-spacing:.14em;line-height:1} .ds-face span{display:block;font:500 .66rem/1.5 var(--body);letter-spacing:.2em;text-transform:uppercase;margin-top:.8em;opacity:.8}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Suite You Can Tow",
+    "overview": "The page is a boutique hotel lobby that happens to be a restroom trailer. The ground is a drenched bottle-green wall with a faint vertical stripe; everything the guest handles is an object from a good hotel: a die-cut door hanger with a real hole, a turndown card, a check-in slip, a registration card, numbered brass door plates, key-tag fobs on a tether. The furniture of the world (linen card stock, brass hardware, oxblood for the \"do not disturb\" side) does the persuading; the photographs prove it is real.\n\nDensity is generous and hotel-quiet: long section padding, two-column asymmetric grids, one idea per section. Type is a high-contrast display serif against a plain grotesk, with engraved small caps reserved for things that would be stamped or engraved on a plate. Motion is physical and short-lived: a hanger that sways once on load and flips on its axis, door signs that flip on hover, tags that tilt on their tether.\n\nThe build explicitly rejects the dark-photo-hero plus gold-icon-columns rental template: photographs sit inside framed \"doors\" and next to paper objects, never full-bleed behind centered copy.",
+    "keyCharacteristics": [
+      "Bottle-green lobby ground, alternating plain deep sections with the striped lobby wall.",
+      "Linen card-stock objects carry the content that matters: amenities, requirements, booking.",
+      "Brass is hardware, never decoration: buttons, plates, rings, rules, icon strokes.",
+      "Oxblood appears only for the occupied/reserved state and required/error signals.",
+      "Gilda Display for voice, Marcellus SC for engraving, Hanken Grotesk for everything functional."
+    ],
+    "rules": [
+      {
+        "name": "The Hardware Rule",
+        "body": "Brass marks things you press, read a number from, or hang something on. If an element is not hardware, a rule, or an icon stroke, it is not brass.",
+        "section": "colors"
+      },
+      {
+        "name": "The Do Not Disturb Rule",
+        "body": "Oxblood means occupied, reserved, required, or wrong. It never decorates.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Gradient Rule",
+        "body": "Linen objects are always `linen` to `linen-2` top to bottom with a 1px inset keyline 10px in; a flat linen rectangle reads as a web card, not card stock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Engraving Rule",
+        "body": "Marcellus SC is for words that would physically be engraved on brass or printed on a sign. Headings and body never use it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Phone Rule",
+        "body": "Every phone number and measurement carries `lining-nums tabular-nums`; numbers are the conversion path.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lit-From-Above Rule",
+        "body": "Every shadow falls straight down with a negative spread. No sideways offsets, no coloured glows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put any new content that a guest must act on inside a linen card-stock object (gradient, 10px inset keyline, card-stock shadow).",
+      "**Do** keep brass for hardware: buttons, numbered plates, rings, tethers, knobs, hairlines and icon strokes.",
+      "**Do** frame photographs at 6px with the framed-photo shadow and a short caption in text-dim; pair them with an object, not with centered overlay copy.",
+      "**Do** set phone numbers and measurements with tabular lining numerals and show both phone lines wherever one appears in a contact block.",
+      "**Do** use the shared easing `cubic-bezier(.16,1,.3,1)` and honour `prefers-reduced-motion` (all animation and transitions off).",
+      "**Do** alternate lobby-wall and night-lobby bands, separated by brass hairlines at roughly 20%."
+    ],
+    "donts": [
+      "**Don't** build a dark full-bleed photo hero with centered copy and a row of gold icon columns; that is the template this world exists to refuse.",
+      "**Don't** use oxblood for emphasis, decoration or a third accent; it is occupied, reserved, required or error only.",
+      "**Don't** set headings or body in Marcellus SC, or bold the Gilda display face.",
+      "**Don't** add gradients, bevels or glossy highlights to the brass buttons; they are flat plates.",
+      "**Don't** cast sideways, hard-offset or coloured shadows.",
+      "**Don't** draw holes on hangers or tags as filled circles on top of the shape; punch them with a mask or ring them like the key tag."
+    ]
+  }
+}

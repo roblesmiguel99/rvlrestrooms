@@ -1,0 +1,124 @@
+{
+  "title": "Re-roll: a fresh hand for Royal Valley",
+  "question": "Every earlier direction is out. The roll assigned Event Wayfinding. Keep it, take an alternate, or re-roll again.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "This Way to Royal Valley",
+      "kicker": "THE ROLL",
+      "lineage": "1970s transit & airport pictogram signage, event wayfinding boards",
+      "thesis": "Guests at every event already follow one sign: RESTROOMS →. The site is built as that signage system, enamel sign panels, pictograms, and arrows that lead straight to booking.",
+      "palette": ["#1f3fb4", "#ffffff", "#0e1630", "#f2c230", "#2f8a4c"],
+      "materials": ["porcelain-enamel sign plates", "drawn pictograms and arrows", "rounded panel corners and rivets", "real photos as the destination"],
+      "viewport": "A full-width royal-blue sign panel: three door pictograms over '3 stations', the line 'Luxury restrooms → Walla Walla & nearby' at signage scale, the night trailer photo as the place the arrow points, and a yellow 'Book your date →' panel beside both phone numbers.",
+      "risk": "Signage grammar is cool and civic; done timidly it reads like an airport, not a wedding.",
+      "raised": [
+        {"from": "challenger-vu", "raise": "The three stations are drawn as three identical repeated units, the row itself is the measure."},
+        {"from": "challenger-quarry", "raise": "Sections are stacked as distinct sign panels separated by deep, honest gaps of ground."},
+        {"from": "challenger-hose", "raise": "Buttons physically depress like push-plates on press, with a short settle."},
+        {"from": "challenger-cracktro", "raise": "One type family at strictly two sizes per panel; hierarchy comes from the panel, not from type tricks."},
+        {"from": "challenger-film", "raise": "Every photo shown full-frame and unretouched, as the place the sign leads to."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Boutique Hotel Amenity Program",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "boutique hotel key tags, door hangers, amenity cards",
+      "thesis": "The trailer as a hotel suite you can tow: key-tag navigation, a door hanger that flips VACANT/OCCUPIED, amenities on a turndown card.",
+      "palette": ["#13322b", "#e9e4da", "#b9925a", "#7a2e2e"],
+      "materials": ["leather key fob", "die-cut door hanger", "embossed card stock"],
+      "viewport": "A door hanger hanging over the night photo, flipping to VACANT, with the Book button as the room key.",
+      "risk": "Close to the familiar hotel-luxury look many rentals already borrow."
+    },
+    {
+      "id": "challenger-fight",
+      "label": "Fight Poster",
+      "verdict": "competitive",
+      "lineage": "boxing fight posters",
+      "thesis": "ROYAL VALLEY vs. THE PORTA-POTTY: two contenders face off across a gold VS, specs as the tale of the tape.",
+      "palette": ["#f1e9d6", "#141414", "#c8a13a", "#9b1c1c"],
+      "materials": ["slab caps", "newsprint", "letterpress smalls"],
+      "viewport": "Split sheet: the trailer photo vs. a standard portable toilet, A/C, sink, lights tallied down each side.",
+      "case": "Comparison makes the value instantly clear; loses audience identification with weddings and corporate hosts.",
+      "risk": "Punchy humor can cheapen the luxury promise.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-fight-poster-hero.webp"
+    },
+    {
+      "id": "challenger-vu",
+      "label": "VU Meter Bridge",
+      "verdict": "declined",
+      "lineage": "recording desk meters",
+      "thesis": "A row of needles leaning into the red.",
+      "palette": ["#f1e8d2", "#111111", "#6b4a2b", "#c62828"],
+      "materials": ["meter glass", "walnut"],
+      "viewport": "Row of meters.",
+      "case": "No audience link to restrooms or events.",
+      "kept": "Identical repeated units as the row's ruler (the three stations).",
+      "risk": "Pure gimmick here."
+    },
+    {
+      "id": "challenger-quarry",
+      "label": "Cloud Quarry",
+      "verdict": "declined",
+      "lineage": "surreal architecture",
+      "thesis": "Cut blocks of weather.",
+      "palette": ["#f4f6f8", "#7fb3e6", "#6a7380"],
+      "materials": ["volumetric cloud"],
+      "viewport": "Cloud cliff.",
+      "case": "Dreamlike, says nothing about the product.",
+      "kept": "Sections as stacked blocks with deep gaps between.",
+      "risk": "Confusing."
+    },
+    {
+      "id": "challenger-hose",
+      "label": "Rubber-Hose Cel",
+      "verdict": "declined",
+      "lineage": "1930s cartoon cels",
+      "thesis": "Boneless gags through an iris.",
+      "palette": ["#111111", "#ffffff", "#9a9a9a"],
+      "materials": ["ink line", "iris wipe"],
+      "viewport": "Iris opening on a cartoon trailer.",
+      "case": "Comic tone undercuts luxury.",
+      "kept": "Controls that squash when pressed.",
+      "risk": "Toilet humor magnet."
+    },
+    {
+      "id": "challenger-film",
+      "label": "Hand-Processed 16mm",
+      "verdict": "declined",
+      "lineage": "experimental film",
+      "thesis": "Emulsion scars and light leaks.",
+      "palette": ["#0c0c0c", "#a9a9a3", "#ff7a1a"],
+      "materials": ["grain", "light leak"],
+      "viewport": "Film strip.",
+      "case": "Arty degradation fights a clean-and-comfortable promise.",
+      "kept": "Photos shown full-frame and unretouched.",
+      "risk": "Reads dirty."
+    },
+    {
+      "id": "challenger-cracktro",
+      "label": "Cracktro Void",
+      "verdict": "declined",
+      "lineage": "demoscene title screens",
+      "thesis": "Bitmap type over drifting dust.",
+      "palette": ["#000000", "#efe9dc", "#f2a71b"],
+      "materials": ["bitmap type", "starfield"],
+      "viewport": "One line of text in a void.",
+      "case": "No audience overlap.",
+      "kept": "One face, two sizes.",
+      "risk": "Alienating."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "Luxury restroom trailer site: dark photo hero, gold accents, amenity icons, gallery, contact form, done impeccably.",
+    "palette": ["#0f0f10", "#ffffff", "#c8a55a"],
+    "materials": ["full-bleed photography", "clean grid"],
+    "viewport": "Night trailer photo full-bleed, headline, Book Now button, three amenity columns below.",
+    "risk": "Indistinguishable from every other luxury-trailer rental by design."
+  },
+  "steer": true
+}

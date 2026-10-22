@@ -1,0 +1,9 @@
+.DS_Store
+# Original full-size photos (web versions live in assets/)
+assets/src/
+# Local review/decision artifacts
+.impeccable/review/
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/config.local.json
+.claude/
