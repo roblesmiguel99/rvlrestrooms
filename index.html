@@ -317,6 +317,21 @@ p{margin:0 0 1em;max-width:62ch;text-wrap:pretty}
 .field.invalid .err{display:block}
 .reg-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:24px;position:relative}
 .reg-foot small{color:var(--ink-dim);font-size:.85rem;max-width:32ch}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.btn[aria-busy=true]{cursor:progress;opacity:.85}
+.btn[aria-busy=true] .btn-label::after{content:"";display:inline-block;width:12px;height:12px;margin-left:10px;vertical-align:-1px;border:1.5px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.status.error{color:var(--oxblood)}
+.received{position:relative;padding:8px 0 4px}
+.received:focus{outline:none}
+.received .stamp{display:inline-block;padding:7px 14px 6px;border:1.5px solid var(--oxblood);color:var(--oxblood);border-radius:3px;font-size:1rem;letter-spacing:.2em;transform:rotate(-4deg);margin-bottom:18px}
+.received h3{font-size:clamp(1.8rem,3vw,2.3rem);margin-bottom:.4em}
+.received p{color:var(--ink-dim)}
+.received p strong{color:var(--ink);font-weight:600}
+.received .small{font-size:.95rem}
+.btn-ghost-ink{background:transparent;color:var(--ink);border-color:rgba(22,38,31,.35);margin-top:8px}
+.btn-ghost-ink:hover{border-color:var(--lobby);background:rgba(22,38,31,.06)}
+.reg.done .reg-top p,.reg.done .fields,.reg.done .reg-foot,.reg.done .status{display:none}
 .status{margin:14px 0 0;font-size:.95rem;color:var(--lobby);font-weight:500;min-height:1.4em;position:relative}
 @media (max-width:860px){.con-grid{grid-template-columns:1fr}}
 @media (max-width:520px){.fields{grid-template-columns:1fr}.reg-foot .btn{width:100%}}
@@ -574,7 +589,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><small>Based in</small><span class="v">Walla Walla, WA</span></div></li>
       </ul>
     </div>
-    <form class="reg" id="bookForm" novalidate>
+    <!-- Formspree: paste the form ID (the part after /f/ in your Formspree endpoint) into data-formspree. Empty = fall back to opening the visitor's email app. -->
+    <form class="reg" id="bookForm" method="POST" action="mailto:Rvl.restrooms@gmail.com" data-formspree="" novalidate>
       <div class="reg-top">
         <div><h3>Registration card</h3><p>Fields marked <span style="color:var(--oxblood)">*</span> are required.</p></div>
         <svg aria-hidden="true"><use href="#crest"/></svg>
@@ -587,11 +603,19 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <div class="field full"><label for="date">Event date</label><input id="date" name="date" type="date"></div>
         <div class="field full"><label for="msg">About your event</label><textarea id="msg" name="msg" placeholder="Venue, guest count, hours, anything we should know"></textarea></div>
       </div>
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <div class="reg-foot">
-        <button class="btn btn-ink" type="submit">Send booking request</button>
-        <small>Opens your email app with the details filled in.</small>
+        <button class="btn btn-ink" type="submit"><span class="btn-label">Send booking request</span></button>
+        <small class="reg-note">Goes straight to Royal Valley. We’ll call you back to confirm your date.</small>
       </div>
       <p class="status" role="status" aria-live="polite"></p>
+      <div class="received" hidden tabindex="-1">
+        <span class="stamp plate">Received</span>
+        <h3>Thank you<span class="who"></span>.</h3>
+        <p>Your booking request is in. We’ll call you back at <strong class="num back-phone"></strong> to talk through your date and venue.</p>
+        <p class="small">Need us sooner? Call <a class="num" href="tel:+15092126575">(509) 212-6575</a> or <a class="num" href="tel:+15093014310">(509) 301-4310</a>.</p>
+        <button class="btn btn-ghost-ink" type="button" data-again>Send another request</button>
+      </div>
     </form>
   </div>
 </section>
@@ -648,30 +672,72 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   // Station doors: tap toggles the occupied sign (hover/focus does it on desktop)
   document.querySelectorAll('.unit button').forEach(b => b.addEventListener('click', () => b.setAttribute('aria-pressed', b.parentElement.classList.toggle('occ'))));
 
-  // Registration card → prefilled email (no backend yet)
+  // Registration card → Formspree (falls back to a prefilled email when no form ID is set)
   const form = document.getElementById('bookForm'), status = form.querySelector('.status');
+  const submitBtn = form.querySelector('button[type=submit]'), received = form.querySelector('.received');
+  const formId = (form.dataset.formspree || '').trim();
+  if (!formId) form.querySelector('.reg-note').textContent = 'Opens your email app with the details filled in.';
   const check = el => {
     const ok = el.checkValidity() && (!el.required || el.value.trim() !== '');
     el.closest('.field').classList.toggle('invalid', !ok);
     el.setAttribute('aria-invalid', !ok);
     return ok;
   };
-  form.querySelectorAll('input').forEach(el => {
+  form.querySelectorAll('.fields input').forEach(el => {
     el.addEventListener('blur', () => el.value && check(el));
     el.addEventListener('input', () => { if (el.closest('.field').classList.contains('invalid') && check(el) && !form.querySelector('.field.invalid')) status.textContent = ''; });
   });
-  form.addEventListener('submit', e => {
+  const setBusy = on => {
+    submitBtn.disabled = on; submitBtn.setAttribute('aria-busy', on);
+    submitBtn.querySelector('.btn-label').textContent = on ? 'Sending' : 'Send booking request';
+  };
+  const showError = msg => { status.classList.add('error'); status.textContent = msg; };
+
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    const bad = [...form.querySelectorAll('input[required], input[type=email]')].filter(el => !check(el));
-    if (bad.length) { bad[0].focus(); status.textContent = 'A couple of details are missing. Check the highlighted fields.'; return; }
+    status.classList.remove('error');
+    const bad = [...form.querySelectorAll('.fields input[required], .fields input[type=email]')].filter(el => !check(el));
+    if (bad.length) { bad[0].focus(); showError('A couple of details are missing. Check the highlighted fields.'); return; }
     const d = Object.fromEntries(new FormData(form));
+    if (d._gotcha) return;
     const name = [d.first, d.last].filter(Boolean).join(' ');
-    const lines = [`Name: ${name}`, `Phone: ${d.phone}`];
-    if (d.email) lines.push(`Email: ${d.email}`);
-    if (d.date) lines.push(`Event date: ${d.date}`);
-    if (d.msg) lines.push('', d.msg);
-    location.href = `mailto:Rvl.restrooms@gmail.com?subject=${encodeURIComponent('Booking request from ' + name)}&body=${encodeURIComponent(lines.join('\n'))}`;
-    status.textContent = 'Your email app should open with the request ready to send. If it doesn’t, call (509) 212-6575.';
+
+    if (!formId) {
+      const lines = [`Name: ${name}`, `Phone: ${d.phone}`];
+      if (d.email) lines.push(`Email: ${d.email}`);
+      if (d.date) lines.push(`Event date: ${d.date}`);
+      if (d.msg) lines.push('', d.msg);
+      location.href = `mailto:Rvl.restrooms@gmail.com?subject=${encodeURIComponent('Booking request from ' + name)}&body=${encodeURIComponent(lines.join('\n'))}`;
+      status.textContent = 'Your email app should open with the request ready to send. If it doesn’t, call (509) 212-6575.';
+      return;
+    }
+
+    const body = new FormData();
+    body.append('Name', name);
+    body.append('Phone', d.phone);
+    if (d.email) body.append('email', d.email);
+    body.append('Event date', d.date || 'Not given');
+    body.append('About the event', d.msg || '');
+    body.append('_subject', `Booking request from ${name}${d.date ? ' for ' + d.date : ''}`);
+    setBusy(true); status.textContent = '';
+    try {
+      const res = await fetch(`https://formspree.io/f/${encodeURIComponent(formId)}`, { method: 'POST', body, headers: { Accept: 'application/json' } });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        throw new Error(j.errors && j.errors.map(x => x.message).join(' ') || 'Server error');
+      }
+      received.querySelector('.who').textContent = d.first ? `, ${d.first}` : '';
+      received.querySelector('.back-phone').textContent = d.phone;
+      form.classList.add('done'); received.hidden = false; received.focus();
+      form.reset();
+    } catch (err) {
+      showError(navigator.onLine === false
+        ? 'You appear to be offline. Check your connection and try again, or call (509) 212-6575.'
+        : 'Sorry, the request didn’t go through. Please try again, or call (509) 212-6575.');
+    } finally { setBusy(false); }
+  });
+  form.querySelector('[data-again]').addEventListener('click', () => {
+    form.classList.remove('done'); received.hidden = true; form.querySelector('#first').focus();
   });
 })();
 </script>
