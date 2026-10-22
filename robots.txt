@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /index-wine-label.html
+
+Sitemap: https://rvlrestrooms.com/sitemap.xml
